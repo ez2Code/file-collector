@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="280.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.levy.filecollector.controller.FileDealController">
+   <TextField id="directoryBox" disable="true" layoutX="165.0" layoutY="41.0" />
+   <TextField id="keyWordBox" layoutX="165.0" layoutY="125.0" />
+   <Text layoutX="82.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="key word" wrappingWidth="63.00000250339508" />
+   <CheckBox id="mkvCheck" layoutX="114.0" layoutY="177.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="63.0" text="mkv" />
+   <CheckBox id="mp4Check" layoutX="173.0" layoutY="177.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="63.0" text="mp4" />
+   <TextField id="otherFormatBox" layoutX="286.0" layoutY="175.0" prefHeight="28.0" prefWidth="92.0" />
+   <Text layoutX="14.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="target format" wrappingWidth="82.99999833106995" />
+   <Button layoutX="236.0" layoutY="226.0" mnemonicParsing="false" onMouseClicked="#executeMove" text="execute" />
+   <Button layoutX="72.0" layoutY="41.0" mnemonicParsing="false" onMouseClicked="#chooseDir" text="choose dir" />
+   <TextField id="targetBox" layoutX="165.0" layoutY="81.0" />
+   <Text layoutX="82.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="target dir" wrappingWidth="63.00000250339508" />
+   <CheckBox id="skipCurrentCheck" layoutX="87.0" layoutY="217.0" mnemonicParsing="false" selected="true" text="skip current dir" />
+   <Text layoutX="236.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="other" wrappingWidth="43.00000250339508" />
+   <CheckBox id="onlyCurrentCheck" layoutX="87.0" layoutY="244.0" mnemonicParsing="false" text="only current dir" />
+</AnchorPane>
